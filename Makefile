@@ -1,10 +1,19 @@
-CC = gcc
+CC = g++
 
 CFLAGS = -g -Wall -O0 
 
-sample: sample.cpp 
-	$(CC) $(CFLAGS) -o sample sample.cpp -lstdc++
+object = sample.o strutures.o
+
+edit: $(object)
+	$(CC) -o edit $(object)
+
+sample.o : sample.cpp
+	$(CC) $(CFLAGS) -c sample.cpp -lstdc++
+
+strutures.o : strutures.cpp strutures.h
+	$(CC) $(CFLAGS) -c strutures.cpp -lstdc++
 
 .PHONY: clean
 
-clean: rm -f *.o
+clean: 
+	rm $(object)

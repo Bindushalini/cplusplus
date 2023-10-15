@@ -3,6 +3,8 @@ using namespace std;
 #include<string>
 #include<typeinfo>
 #include<cstring>
+#include "strutures.h"
+#include<vector>
 // int main(){
 //     string s;
 //     cout<<"hello world"<<endl;
@@ -47,8 +49,18 @@ int main(){
     // cout<<age[3]<<endl;
     // cout<<temp[0]<<","<<temp[1]<<","<<temp[2]<<endl;
 
-    strcat(arr_str1, arr_str2);
-    cout<<arr_str1<<endl;
-    cout<<str_1+ str_2<<endl; //overloaded + operator for string 
+    // strcat(arr_str1, arr_str2);
+    // cout<<arr_str1<<endl;
+    // cout<<str_1+ str_2<<endl; //overloaded + operator for string 
+    // return 0;
+    
+    // cout<<"in structures"<<endl;
+    vector<int> myvec;
+    cout<<myvec.size()<<endl;
+    myvec.push_back(2);
+    cout<<myvec.size()<<endl;
+    cow myc(9, "suss", pet);
+    myc.display();
+
     return 0;
 }
