@@ -5,6 +5,7 @@ using namespace std;
 #include<cstring>
 #include "strutures.h"
 #include<vector>
+
 // int main(){
 //     string s;
 //     cout<<"hello world"<<endl;
@@ -13,7 +14,7 @@ using namespace std;
 //     cout<<s;
 //     return 0;
 // }
-
+int checkfile();
 // int a, b =5;
 auto a=8;
 auto b=122332111111;
@@ -55,12 +56,12 @@ int main(){
     // return 0;
     
     // cout<<"in structures"<<endl;
-    vector<int> myvec;
-    cout<<myvec.size()<<endl;
-    myvec.push_back(2);
-    cout<<myvec.size()<<endl;
-    cow myc(9, "suss", pet);
-    myc.display();
-
+    // vector<int> myvec;
+    // cout<<myvec.size()<<endl;
+    // myvec.push_back(2);
+    // cout<<myvec.size()<<endl;
+    // cow myc(9, "suss", pet);
+    // myc.display();
+    checkfile();
     return 0;
 }

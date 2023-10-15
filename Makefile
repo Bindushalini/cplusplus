@@ -2,7 +2,7 @@ CC = g++
 
 CFLAGS = -g -Wall -O0 
 
-object = sample.o strutures.o
+object = sample.o file.o strutures.o 
 
 edit: $(object)
 	$(CC) -o edit $(object)
@@ -12,6 +12,9 @@ sample.o : sample.cpp
 
 strutures.o : strutures.cpp strutures.h
 	$(CC) $(CFLAGS) -c strutures.cpp -lstdc++
+
+file.o : file.cpp
+	$(CC) $(CFLAGS) -c file.cpp -lstdc++
 
 .PHONY: clean
 
