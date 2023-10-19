@@ -19,4 +19,4 @@ file.o : file.cpp
 .PHONY: clean
 
 clean: 
-	rm $(object)
+	rm -f $(object)
