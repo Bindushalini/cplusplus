@@ -31,7 +31,7 @@ char arr_str1 [LENGTH1] = "Hey guys! ";
 char arr_str2[] = "ssasa";
 
 string str_1 = "hi eee";
-string str_2 = "hi sssseee";
+string str_2 = "hi ssssee";
 
 
 int main(){
