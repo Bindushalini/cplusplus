@@ -31,3 +31,18 @@ Containers: Such as std::vector, std::list, and std::map.
 Algorithms: Functions for sorting, searching, and manipulating data.
 Iterators: Objects that allow you to traverse containers.
 
+Vectors:
+std::vector is a sequence container that encapsulates dynamic size arrays.
+ std::pmr::vector is an alias template that uses a polymorphic allocator.
+The elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. This means that a pointer to an element of a vector may be passed to any function that expects a pointer to an element of an array.
+
+The storage of the vector is handled automatically, being expanded as needed. Vectors usually occupy more space than static arrays, because more memory is allocated to handle future growth. This way a vector does not need to reallocate each time an element is inserted, but only when the additional memory is exhausted. 
+
+The complexity (efficiency) of common operations on vectors is as follows:
+
+Random access - constant 𝓞(1).
+Insertion or removal of elements at the end - amortized constant 𝓞(1).
+Insertion or removal of elements - linear in the distance to the end of the vector 𝓞(n).
+
+
+integers - 32 bit wide.
