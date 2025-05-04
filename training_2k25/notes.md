@@ -46,3 +46,18 @@ Insertion or removal of elements - linear in the distance to the end of the vect
 
 
 integers - 32 bit wide.
+
+initialiser list: Unnecessary Default Constructor Calls - avoids object creayion and assignment(2 step creation)
+Initializing Base Classes in Inheritanc
+Initializing const and reference Members
+ Improving Performance with Complex Objects - such as vector , string.
+
+
+ const Members:
+
+Represent constant values that should not change after initialization.
+Examples: configuration settings, fixed IDs, or any immutable properties of an object.
+Reference Members:
+
+Used to store references to external objects or variables that the class operates on.
+Examples: when an object needs access to a resource or variable that is maintained externally.
