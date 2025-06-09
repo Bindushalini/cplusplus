@@ -61,3 +61,22 @@ Reference Members:
 
 Used to store references to external objects or variables that the class operates on.
 Examples: when an object needs access to a resource or variable that is maintained externally.
+
+typedef - alias for existing data type(in case of long names)
+typedef unsigned long int Scores - alais of unsigned long int as Scores
+
+Scores abc_score = 0;
+Scores xyz_score = 100;
+
+alternate to typedef is using keyword
+using Scores = unsigned long int;
+
+to overcome the limitation of enumtype, enum classes are used
+enum class: strongly typed.
+
+
+float: trailing f;
+double : without trailing f;
+
+auto type = must be initialised at declaration
+typeid(var_name).name()
