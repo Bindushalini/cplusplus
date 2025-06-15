@@ -80,3 +80,11 @@ double : without trailing f;
 
 auto type = must be initialised at declaration
 typeid(var_name).name()
+
+
+address of first element of array will be stored in name of array variable - this can be pointed to a pointer.
+int a[]={1,2...};
+int *p=a;
+print *p - prints first value of array.
+
+need not use & address of operator(a)
